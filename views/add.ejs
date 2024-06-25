@@ -1,0 +1,23 @@
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <%- include('./partials/nav.ejs') %>
+            <div class="create-note content">
+                <form action="/notes" method="post">
+                    <label for="title">Note Title: </label>
+                    <input type="text" name="title">
+                    <br><br>
+                    <label for="body">Note Body: </label>
+                    <textarea placeholder="Add your note" name="body"></textarea>
+                    <br><br>
+                    <button type="submit">Add Note</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+
+            <%- include('./partials/footer.ejs') %>
+    </body>
+
+
+</html>
